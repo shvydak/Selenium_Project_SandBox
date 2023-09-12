@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteRunClasses" verbose="1">
+    <test name="nameRunClasses">
+        <classes>
+            <class name="tests.email_campaigns.EmailCampaignsDeletingTests"/>
+        </classes>
+    </test>
+
+</suite>

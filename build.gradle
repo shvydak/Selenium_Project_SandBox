@@ -1,0 +1,77 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.github.bonigarcia:webdrivermanager:5.5.3'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.12.1'
+    implementation 'org.testng:testng:7.7.1'
+//         API
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+//         LOMBOK
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testCompileOnly 'org.projectlombok:lombok:1.18.26'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
+//         MAILSRURP
+    implementation 'com.mailslurp:mailslurp-client-java:11.5.10'
+
+    implementation 'ch.qos.logback:logback-classic:1.2.9'
+
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+
+    testImplementation 'org.awaitility:awaitility:4.2.0'
+}
+
+test {
+    useTestNG()
+}
+
+
+task runCustomTests(type: Test) {
+    useTestNG() {
+        // GROUPS
+        def groups = System.getProperty('groups')
+        if (groups != null) {
+            includeGroups groups
+        }
+        // SUITE
+        def suite = System.getProperty('suite', '')
+        if (suite.equals('contacts')) {
+            suites('src/test/java/tests/config/contacts.xml')
+        } else if (suite.equals('emailCampaignsSaving')) {
+            suites('src/test/java/tests/config/emailCampaignsSaving.xml')
+        } else if (suite.equals('emailCampaignsSending')) {
+            suites('src/test/java/tests/config/emailCampaignsSending.xml')
+        } else if (suite.equals('emailCampaignsDeleting')) {
+            suites('src/test/java/tests/config/emailCampaignsDeleting.xml')
+        } else if (suite.equals('login')) {
+            suites('src/test/java/tests/config/login.xml')
+        } else if (suite.equals('smsCampaignsSaving')) {
+            suites('src/test/java/tests/config/smsCampaignsSaving.xml')
+        } else if (suite.equals('api')) {
+            suites('src/test/java/tests/config/allClasses.xml')
+        } else {
+            suites('src/test/java/tests/config/emptyClass.xml')
+            println("only login test was runned")
+        }
+
+        if (project.hasProperty('browser')) {
+            systemProperty 'browser', "${browser}"
+        }
+
+        // ./gradlew clean -Pbrowser=firefox -Dgroups=smoke -Dsuite=contacts runCustomTests
+    }
+}
+
+
+
+

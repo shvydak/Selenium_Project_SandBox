@@ -1,0 +1,34 @@
+15:29:54.466 WARN  org.testng.internal.Configuration - Detected a static method [tests.email_campaigns.EmailCampaignsSendingTests.beforeAll()]. Static configuration methods can cause  unexpected behavior.
+15:30:18.292 INFO  tests.login.StartTest - 'badRequest400' --> Test started
+15:30:18.295 INFO  tests.login.StartTest - Expected status code--> 400
+15:30:19.935 INFO  tests.login.StartTest - Test 'badRequest400' finished
+15:30:19.940 INFO  tests.login.StartTest - 'methodNotAlowed405' --> Test started
+15:30:19.941 INFO  tests.login.StartTest - Expected status code--> 405
+15:30:20.210 INFO  tests.login.StartTest - Test 'methodNotAlowed405' finished
+15:30:20.212 INFO  tests.login.StartTest - 'notFound404' --> Test started
+15:30:20.212 INFO  tests.login.StartTest - Expected status code--> 404
+15:30:20.569 INFO  tests.login.StartTest - Test 'notFound404' finished
+15:30:20.858 INFO  tests.login.StartTest - 'unauthorized401' --> Test started
+15:30:20.859 INFO  tests.login.StartTest - Expected status code--> 401
+15:30:21.832 INFO  tests.login.StartTest - Test 'unauthorized401' finished
+15:30:22.295 INFO  tests.contacts.ContactsTests - 'AddNewContactEmptyFieldsSaveNegativeAPI' --> Test started
+15:30:27.866 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:28.314 INFO  tests.contacts.ContactsTests - Entered email ': mertie' error message --> 'A contact identifier, i.e. email, cellPhone, or externalId, is missing in the request'
+15:30:31.318 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:31.736 INFO  tests.contacts.ContactsTests - Entered email ': Wilmer@' error message --> 'ErrNotValid'
+15:30:34.740 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:35.117 INFO  tests.contacts.ContactsTests - Entered email ': Zane@gmail' error message --> 'ErrNotValid'
+15:30:38.122 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:38.544 INFO  tests.contacts.ContactsTests - Entered email ': Elisha@gmail.' error message --> 'ErrNotValid'
+15:30:41.549 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:41.956 INFO  tests.contacts.ContactsTests - Entered email ': Robt@.com' error message --> 'ErrNotValid'
+15:30:44.960 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:45.238 INFO  tests.contacts.ContactsTests - Entered email ': Wilfredgmail.com' error message --> 'A contact identifier, i.e. email, cellPhone, or externalId, is missing in the request'
+15:30:48.243 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:48.642 INFO  tests.contacts.ContactsTests - Entered email ': @balistreri' error message --> 'ErrNotValid'
+15:30:51.647 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:52.022 INFO  tests.contacts.ContactsTests - Entered email ': @bogisich.' error message --> 'ErrNotValid'
+15:30:55.027 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:30:55.435 INFO  tests.contacts.ContactsTests - Entered email ': @brown.name' error message --> 'ErrNotValid'
+15:30:59.578 INFO  tests.contacts.ContactsTests - 'addNewContactPositiveAPI' --> Test started
+15:31:00.948 INFO  tests.contacts.ContactsTests - Contact to save: ContactDTO(id=792793471, externalId=, password=null, email=celinda.schamberger@hotmail.com, phone=null, cellPhone=1060737720, firstName=Kenny, lastName=Wehner, dateOfBirth=null, address=null, city=null, country=null, company=Fisher-Williamson, position=veterinary doctor, canReceiveEmails=false, canReceiveSmsMessages=false, lists_ToSubscribe=null, lists_ToUnsubscribe=null, customFields={}, campaignSource=, c_DaysSinceSignup=0, listAssociationTime=null, joinSource=null, lastChanged=null, timestampSignup=2023-09-07T15:31:00.197, ipSignup=176.231.185.61, deleted=false)

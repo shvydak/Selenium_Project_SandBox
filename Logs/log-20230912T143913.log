@@ -1,0 +1,14 @@
+14:39:38.708 INFO  tests.login.StartTest - 'badRequest400' --> Test started
+14:39:38.714 INFO  tests.login.StartTest - Expected status code--> 400
+14:39:40.690 INFO  tests.login.StartTest - Test 'badRequest400' finished
+14:39:40.725 INFO  tests.login.StartTest - 'methodNotAlowed405' --> Test started
+14:39:40.726 INFO  tests.login.StartTest - Expected status code--> 405
+14:39:41.068 INFO  tests.login.StartTest - Test 'methodNotAlowed405' finished
+14:39:41.070 INFO  tests.login.StartTest - 'notFound404' --> Test started
+14:39:41.071 INFO  tests.login.StartTest - Expected status code--> 404
+14:39:41.412 INFO  tests.login.StartTest - Test 'notFound404' finished
+14:39:41.415 INFO  tests.login.StartTest - 'start' --> Test started
+14:39:41.418 INFO  tests.login.StartTest - 'unauthorized401' --> Test started
+14:39:41.419 INFO  tests.login.StartTest - Expected status code--> 401
+14:39:42.319 INFO  tests.login.StartTest - Test 'unauthorized401' finished
+14:39:47.611 INFO  tests.login.StartTest - *** TEST FINISHED ***

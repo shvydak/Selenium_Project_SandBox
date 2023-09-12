@@ -1,0 +1,51 @@
+15:33:12.318 WARN  org.testng.internal.Configuration - Detected a static method [tests.email_campaigns.EmailCampaignsSendingTests.beforeAll()]. Static configuration methods can cause  unexpected behavior.
+15:33:36.353 INFO  tests.login.StartTest - 'badRequest400' --> Test started
+15:33:36.355 INFO  tests.login.StartTest - Expected status code--> 400
+15:33:37.858 INFO  tests.login.StartTest - Test 'badRequest400' finished
+15:33:37.866 INFO  tests.login.StartTest - 'methodNotAlowed405' --> Test started
+15:33:37.866 INFO  tests.login.StartTest - Expected status code--> 405
+15:33:38.238 INFO  tests.login.StartTest - Test 'methodNotAlowed405' finished
+15:33:38.241 INFO  tests.login.StartTest - 'notFound404' --> Test started
+15:33:38.241 INFO  tests.login.StartTest - Expected status code--> 404
+15:33:38.571 INFO  tests.login.StartTest - Test 'notFound404' finished
+15:33:38.574 INFO  tests.login.StartTest - 'unauthorized401' --> Test started
+15:33:38.575 INFO  tests.login.StartTest - Expected status code--> 401
+15:33:39.863 INFO  tests.login.StartTest - Test 'unauthorized401' finished
+15:33:39.869 INFO  tests.contacts.ContactsTests - 'AddNewContactEmptyFieldsSaveNegativeAPI' --> Test started
+15:33:43.615 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:33:44.083 INFO  tests.contacts.ContactsTests - Entered email ': alphonse' error message --> 'A contact identifier, i.e. email, cellPhone, or externalId, is missing in the request'
+15:33:47.090 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:33:47.479 INFO  tests.contacts.ContactsTests - Entered email ': Alta@' error message --> 'ErrNotValid'
+15:33:50.482 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:33:50.852 INFO  tests.contacts.ContactsTests - Entered email ': Loretta@gmail' error message --> 'ErrNotValid'
+15:33:53.855 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:33:55.638 INFO  tests.contacts.ContactsTests - Entered email ': Roger@gmail.' error message --> 'ErrNotValid'
+15:33:58.640 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:33:59.023 INFO  tests.contacts.ContactsTests - Entered email ': Rufina@.com' error message --> 'ErrNotValid'
+15:34:02.029 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:34:02.496 INFO  tests.contacts.ContactsTests - Entered email ': Winstongmail.com' error message --> 'A contact identifier, i.e. email, cellPhone, or externalId, is missing in the request'
+15:34:05.501 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:34:05.872 INFO  tests.contacts.ContactsTests - Entered email ': @hermann' error message --> 'ErrNotValid'
+15:34:08.874 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:34:09.300 INFO  tests.contacts.ContactsTests - Entered email ': @schumm.' error message --> 'ErrNotValid'
+15:34:12.303 INFO  tests.contacts.ContactsTests - 'addNewContactEmailFormatNegativeAPI' --> Test started
+15:34:12.684 INFO  tests.contacts.ContactsTests - Entered email ': @padberg.org' error message --> 'ErrNotValid'
+15:34:15.792 INFO  tests.contacts.ContactsTests - 'addNewContactPositiveAPI' --> Test started
+15:34:17.036 INFO  tests.contacts.ContactsTests - Contact to save: ContactDTO(id=792796998, externalId=, password=null, email=lacey.zieme@hotmail.com, phone=null, cellPhone=1422925641, firstName=Janette, lastName=Emmerich, dateOfBirth=null, address=null, city=null, country=null, company=Kovacek Group, position=teacher, canReceiveEmails=false, canReceiveSmsMessages=false, lists_ToSubscribe=null, lists_ToUnsubscribe=null, customFields={}, campaignSource=, c_DaysSinceSignup=0, listAssociationTime=null, joinSource=null, lastChanged=null, timestampSignup=2023-09-07T15:34:16.29, ipSignup=176.231.185.61, deleted=false)
+15:34:22.410 INFO  tests.contacts.ContactsTests - Get saved contact: ContactDTO(id=792796998, externalId=, password=null, email=lacey.zieme@hotmail.com, phone=null, cellPhone=1422925641, firstName=Janette, lastName=Emmerich, dateOfBirth=null, address=null, city=null, country=null, company=Kovacek Group, position=teacher, canReceiveEmails=false, canReceiveSmsMessages=false, lists_ToSubscribe=null, lists_ToUnsubscribe=null, customFields=null, campaignSource=, c_DaysSinceSignup=0, listAssociationTime=0001-01-01T00:00:00, joinSource=API, lastChanged=null, timestampSignup=2023-09-07T15:34:16.29, ipSignup=176.231.185.61, deleted=false)
+15:34:25.413 INFO  tests.contacts.ContactsTests - 'addNewContactSameEmailNegativeAPI' --> Test started
+15:34:28.803 INFO  tests.contacts.ContactsTests - 'addNewContactSameMobileNegativeAPI' --> Test started
+15:34:33.609 INFO  t.e.EmailCampaignsSendingTests - 'sendingEmailCampaignToSingleEmailPositiveAPI' --> Test started
+15:34:33.625 INFO  t.e.EmailCampaignsSendingTests - Creating new Email Campaign --> EmailCampaignBody(externalId=null, customFromAddress=null, customReplyToAddress=null, customData=null, customUnsubscribeMode=None, externalUnsubscribeUrl=null, trackLinks=true, subject=Test API Subject // 2023-09-07 15:34:33, body=This is BODY API, toListsById=null, toMembersById=null, toMembersByEmail=[c76b70de-a180-4111-b9aa-a2e0057512e9@mailslurp.com], campaignAttachments=null, excludeFromMembers=null, excludeFromLists=null, toMembersByExternalId=null)
+15:34:34.285 INFO  t.e.EmailCampaignsSendingTests - Created new Email Campaign --> EmailCampaignResponse(id=50266119, externalId=null, customFromAddress=null, customReplyToAddress=null, customUnsubscribeMode=None, externalUnsubscribeUrl=null, trackLinks=true, subject=Test API Subject // 2023-09-07 15:34:33, body=null, toListsById=null, toMembersById=null, excludeFromMembers=null, excludeFromLists=null, toMembersByExternalId=null)
+15:34:34.285 INFO  t.e.EmailCampaignsSendingTests - Waiting while campaign sent, no more than 90 seconds
+15:35:01.018 INFO  t.e.EmailCampaignsSendingTests - Wait while receiving email in the remote mailbox
+15:35:01.277 INFO  t.e.EmailCampaignsSendingTests - Email received 'successfully'
+15:35:04.281 INFO  t.e.EmailCampaignsSavingTests - 'creationAndSavingEmailCampaignToSingleEmailPositiveAPI' --> Test started
+15:35:04.282 INFO  t.e.EmailCampaignsSavingTests - EmailCampaign Body --> EmailCampaignBody(externalId=null, customFromAddress=null, customReplyToAddress=null, customData=null, customUnsubscribeMode=None, externalUnsubscribeUrl=null, trackLinks=true, subject=Test API Subject // 2023-09-07 15:35:04, body=This is BODY API, toListsById=null, toMembersById=null, toMembersByEmail=[c76b70de-a180-4111-b9aa-a2e0057512e9@mailslurp.com], campaignAttachments=null, excludeFromMembers=null, excludeFromLists=null, toMembersByExternalId=null)
+15:35:05.453 INFO  t.e.EmailCampaignsSavingTests - EmailCampaign Response --> EmailCampaignResponse(id=50266122, externalId=null, customFromAddress=null, customReplyToAddress=null, customUnsubscribeMode=None, externalUnsubscribeUrl=null, trackLinks=true, subject=Test API Subject // 2023-09-07 15:35:04, body=null, toListsById=null, toMembersById=null, excludeFromMembers=null, excludeFromLists=null, toMembersByExternalId=null)
+15:35:10.906 INFO  t.e.EmailCampaignsSavingTests - Response statistics --> EmailCampaignStatisticsResponse(sentDate=2000-01-01T00:00:00, howManyWasSent=0, bounced=0, howManyWasBouncedSoft=0, howManyWasBouncedHard=0, howManyWasWatched=0, clicked=0, linksClicked=0, unsubcribed=0, resubcribed=0, abused=0)
+15:35:13.914 INFO  t.e.EmailCampaignsSavingTests - 'creationAndSavingEmailCampaignWORecipientsNegativeAPI' --> Test started
+15:35:13.915 INFO  t.e.EmailCampaignsSavingTests - EmailCampaign Body --> EmailCampaignBody(externalId=null, customFromAddress=null, customReplyToAddress=null, customData=null, customUnsubscribeMode=None, externalUnsubscribeUrl=null, trackLinks=true, subject=Subject WO Recipients!, body=null, toListsById=null, toMembersById=null, toMembersByEmail=null, campaignAttachments=null, excludeFromMembers=null, excludeFromLists=null, toMembersByExternalId=null)
+15:35:14.241 INFO  t.e.EmailCampaignsSavingTests - EmailCampaign Response message--> Please provide any recipients
+15:35:17.360 INFO  tests.login.StartTest - *** TEST FINISHED ***
